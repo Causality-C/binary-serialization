@@ -1,7 +1,6 @@
 all: serial
-	gcc -o main serial.o main.c
-	./main
+	gcc -g -o main serial.o main.c
 serial: 
 	gcc -c -o serial.o serial.c
-clean: all
-	rm *.o main 
+clean: 
+	rm *.o main *.txt
